@@ -16,14 +16,7 @@ class VacationList extends Component {
         
           }
 
-        // this.state = {
-        //     vacations : [
-        //         { id: 1, _name: "item.name", _location: " item.location", _price: 1, _image: "" },
-        //         { id: 2, _name: "item.name", _location: " item.location", _price: 1, _image: "" },
-        //         { id: 3, _name: "item.name", _location: " item.location", _price: 1, _image: "" }
-
-        //     ]
-        // }
+    
         this.eachVacation = this.eachVacation.bind(this);
         this.update = this.update.bind(this);
         this.delete = this.delete.bind(this);
@@ -91,13 +84,6 @@ class VacationList extends Component {
         return (
             <div className="vacation-list"  > 
              {this.state.vacations.map(this.eachVacation)} 
-        
-            
-                <Tooltip title="Add new idea" >
-                    <Fab size="medium" color="warning" aria-label="add" onClick={this.add} >
-                        <AddIcon />
-                    </Fab>
-                </Tooltip>
             </div>
         )
     }
