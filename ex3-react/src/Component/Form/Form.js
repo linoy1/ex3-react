@@ -3,9 +3,7 @@ import Vacations from "./Vacations";
 import vacationData from '../../Data/vacations.json';
 import { Tooltip, Fab } from "@mui/material";
 import { MdAdd } from 'react-icons/md';
-// import { Tooltip, Fab } from '@mui/material' ;
 import AddIcon from '@mui/icons-material/Add';
-// import Form from "../Form/Form";
 
 class Form extends Component {
     constructor(props) {

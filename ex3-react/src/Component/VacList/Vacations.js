@@ -65,8 +65,8 @@ class Vacations extends Component {
                         <Fab size="medium" color="secondary" aria-label="edit" onClick={this.update} >
                             <EditIcon />
                         </Fab>
-                        <Fab size="medium" color="primary" aria-label="delete" onClick={this.delete} >
-                            <EditIcon />
+                        <Fab size="medium" color="secondary" aria-label="delete" onClick={this.delete} >
+                            <DeleteIcon />
                         </Fab>
                     </span >
                 </CardContent>
