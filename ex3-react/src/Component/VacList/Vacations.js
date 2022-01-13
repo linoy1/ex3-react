@@ -2,13 +2,23 @@ import React, { Component } from 'react';
 import { MdDelete, MdEdit, MdSave } from 'react-icons/md';
 import { Card, CardContent } from '@mui/material';
 import { maxHeight } from '@mui/system';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
+import {Fab } from "@mui/material";
+
 
 
 
 class Vacations extends Component {
     constructor(props) {
         super(props);
-
+        this.state = {
+            id: props.index,
+            name: props.name,
+            location: props.location,
+            price: props.price,
+            image: props.image
+        }
         this.state = {
             editing: false
         }
@@ -43,19 +53,24 @@ class Vacations extends Component {
             <div >
                 <form>
                     <textarea onChange={event => this.newVacation = event.target.value} />
-                    <button onClick={this.save} >< MdSave/></button> </form >
+                    <button onClick={this.save} >< MdSave /></button> </form >
             </div>
         )
     }
     renderUI() {
         return (
-            <Card sx={{maxWidth:375,marginBottom:'10px'}} raised={true}>
-            <CardContent>
-                <div > {this.props.children} </div> <span >
-                    <button onClick={this.edit} > <MdEdit/> </button>
-                    <button onClick={this.delete} ><MdDelete/></button> </span >
-            </CardContent>
-       </Card>
+            <Card sx={{ maxWidth: 375, marginBottom: '10px' }} raised={true}>
+                <CardContent>
+                    <div> {this.props.children} </div> <span >
+                        <Fab size="medium" color="secondary" aria-label="edit" onClick={this.update} >
+                            <EditIcon />
+                        </Fab>
+                        <Fab size="medium" color="primary" aria-label="delete" onClick={this.delete} >
+                            <EditIcon />
+                        </Fab>
+                    </span >
+                </CardContent>
+            </Card>
         )
     }
     render() {

@@ -1,16 +1,48 @@
 [{
         "id": 1,
-        "vacation": "Phi Phi Islands",
-        "group": "blabla"
+        "name": "Phi Phi Islands",
+        "location": "Thailand",
+        "price": "$1,480",
+        "image": "https://www.qbictravel.com/wp-content/uploads/2020/10/20180330_Phi-Phi-island-scaled.jpg"
     },
+
     {
         "id": 2,
-        "vacation": "Phi Phi Islands",
-        "group": "blabla"
+        "name": "Kudahuvadhoo Island",
+        "location": "Maldives",
+        "price": "$1,230",
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4d/45/49/province-of-barcelona.jpg?w=700&h=500&s=1"
     },
+
     {
         "id": 3,
-        "vacation": "Phi Phi Islands",
-        "group": "blabla"
+        "name": "Greecevillage",
+        "location": "Maldives",
+        "price": "$1,480",
+        "image": ""
+    },
+
+    {
+        "id": 4,
+        "name": "Kudahuvadhoo Island",
+        "location": "Maldives",
+        "price": "$1,480",
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/5d/72/a4/beach-club.jpg?w=600&h=400&s=1"
+    },
+
+    {
+        "id": 5,
+        "name": "Phi Phi Islands",
+        "location": "Thailand",
+        "price": "$1,000",
+        "image": "https://media.timeout.com/images/105434111/image.jpg"
+    },
+
+    {
+        "id": 6,
+        "name": "Kudahuvadhoo Island",
+        "location": "Maldives",
+        "price": "$1,030",
+        "image": "https://www.thediaryofanomad.com/wp-content/w3-webp/uploads/2020/11/rome-for-3-days-in-rome-itinerary-vatican-dome-view.jpgw3.webp"
     }
 ]

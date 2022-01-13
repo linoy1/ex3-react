@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import VacationList from './Component/VacationList';
+import VacationList from './Component/VacList/VacationList';
 import reportWebVitals from './reportWebVitals';
 
+
 ReactDOM.render(
-    <React.StrictMode >
-        <VacationList />
-    </React.StrictMode>,
+    <StrictMode>
+    <VacationList/>
+    </StrictMode>,
     document.getElementById('root')
 );
 
